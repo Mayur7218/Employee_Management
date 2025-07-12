@@ -60,7 +60,7 @@ public class EmployeeController {
        service.delete(employee);
     }
 
-    @PatchMapping("/employee/{id}")
+    @PatchMapping("/employees/{id}")
     public Employee updateEmployeeById(@PathVariable int id, @RequestBody Map<String, Object> patchPayLoad){
         Employee employee=service.findById(id);
         if(employee==null){
